@@ -59,7 +59,7 @@ export function PricingCards() {
             >
               {plan.highlighted && (
                 <>
-                  <div className="absolute top-0 inset-x-0 h-1 bg-gradient-to-r from-[#2aab8f] via-teal-400 to-[#2aab8f]" />
+                  <div className="absolute top-0 inset-x-0 h-1 bg-gradient-to-r from-[#2aab8f] via-[#208E76] to-[#2aab8f]" />
                   <Badge className="absolute -top-2.5 left-1/2 -translate-x-1/2">
                     Mais popular
                   </Badge>

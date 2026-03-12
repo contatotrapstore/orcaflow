@@ -38,7 +38,7 @@ export function PublicHeader() {
             nativeButton={false}
             render={<Link href="/login" />}
             className={`transition-colors duration-300 ${
-              scrolled ? "" : "border-white/20 text-white hover:bg-white/10"
+              scrolled ? "" : "!border-white/30 !bg-transparent !text-white hover:!bg-white/10"
             }`}
           >
             Entrar
