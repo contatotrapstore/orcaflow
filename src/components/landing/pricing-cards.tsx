@@ -53,13 +53,13 @@ export function PricingCards() {
               key={plan.name}
               className={`relative flex flex-col overflow-hidden rounded-xl bg-card p-6 ${
                 plan.highlighted
-                  ? "ring-2 ring-emerald-500 emerald-glow"
+                  ? "ring-2 ring-[#208E76] brand-glow"
                   : "glass-light transition-all duration-300 hover:-translate-y-1 hover:shadow-lg"
               }`}
             >
               {plan.highlighted && (
                 <>
-                  <div className="absolute top-0 inset-x-0 h-1 bg-gradient-to-r from-emerald-400 via-teal-400 to-emerald-400" />
+                  <div className="absolute top-0 inset-x-0 h-1 bg-gradient-to-r from-[#2aab8f] via-teal-400 to-[#2aab8f]" />
                   <Badge className="absolute -top-2.5 left-1/2 -translate-x-1/2">
                     Mais popular
                   </Badge>

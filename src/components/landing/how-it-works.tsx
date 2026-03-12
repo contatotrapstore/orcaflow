@@ -48,10 +48,10 @@ export function HowItWorks() {
               key={item.step}
               className="relative flex flex-col items-center gap-4 p-6 text-center"
             >
-              <div className="flex size-14 items-center justify-center rounded-full bg-emerald-100 text-emerald-600 ring-2 ring-emerald-200 dark:bg-emerald-950 dark:text-emerald-400 dark:ring-emerald-800">
+              <div className="flex size-14 items-center justify-center rounded-full bg-[#208E76]/10 text-[#1a7562] ring-2 ring-[#208E76]/20 dark:bg-[#208E76]/10 dark:text-[#2aab8f] dark:ring-[#208E76]/30">
                 <item.icon className="size-7" />
               </div>
-              <span className="absolute -top-1 right-4 text-6xl font-bold text-emerald-500/10 lg:right-6">
+              <span className="absolute -top-1 right-4 text-6xl font-bold text-[#208E76]/10 lg:right-6">
                 {item.step}
               </span>
               <h3 className="text-lg font-semibold">{item.title}</h3>

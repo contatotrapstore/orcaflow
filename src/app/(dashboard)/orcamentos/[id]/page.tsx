@@ -285,7 +285,7 @@ export default async function QuoteDetailPage({ params }: QuoteDetailPageProps) 
                   {activityLogs.map((log) => (
                     <div key={log.id} className="flex gap-3">
                       <div className="relative flex flex-col items-center">
-                        <div className="h-2 w-2 rounded-full bg-emerald-500 mt-1.5" />
+                        <div className="h-2 w-2 rounded-full bg-[#208E76] mt-1.5" />
                         <div className="flex-1 w-px bg-border" />
                       </div>
                       <div className="flex-1 pb-4">

@@ -65,7 +65,7 @@ export function FeaturesGrid() {
               }`}
               style={isVisible ? { animationDelay: `${index * 0.1}s` } : undefined}
             >
-              <div className="flex size-10 shrink-0 items-center justify-center rounded-lg bg-emerald-100 text-emerald-600 dark:bg-emerald-950 dark:text-emerald-400">
+              <div className="flex size-10 shrink-0 items-center justify-center rounded-lg bg-[#208E76]/10 text-[#1a7562] dark:bg-[#208E76]/10 dark:text-[#2aab8f]">
                 <feature.icon className="size-5" />
               </div>
               <div>

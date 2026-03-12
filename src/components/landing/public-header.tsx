@@ -2,6 +2,7 @@
 
 import { useState, useEffect } from "react"
 import Link from "next/link"
+import Image from "next/image"
 import { Button } from "@/components/ui/button"
 import { ThemeToggle } from "@/components/shared/theme-toggle"
 
@@ -26,13 +27,8 @@ export function PublicHeader() {
       }`}
     >
       <div className="mx-auto flex h-14 max-w-5xl items-center justify-between px-4">
-        <Link
-          href="/"
-          className={`text-lg font-bold transition-colors duration-300 ${
-            scrolled ? "" : "text-white"
-          }`}
-        >
-          OrçaFlow
+        <Link href="/">
+          <Image src="/logo.png" alt="OrçaFlow" width={130} height={34} className="h-7 w-auto" />
         </Link>
         <div className="flex items-center gap-2">
           <ThemeToggle />

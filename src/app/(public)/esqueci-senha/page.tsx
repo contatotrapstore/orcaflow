@@ -2,6 +2,7 @@
 
 import { useActionState } from "react"
 import Link from "next/link"
+import Image from "next/image"
 import { resetPassword, type AuthState } from "@/actions/auth"
 import { Button } from "@/components/ui/button"
 import { Input } from "@/components/ui/input"
@@ -12,7 +13,6 @@ import {
   CardDescription,
   CardFooter,
   CardHeader,
-  CardTitle,
 } from "@/components/ui/card"
 
 export default function EsqueciSenhaPage() {
@@ -25,7 +25,7 @@ export default function EsqueciSenhaPage() {
     <div className="flex min-h-screen items-center justify-center p-6">
     <Card className="w-full max-w-md mx-auto">
       <CardHeader className="text-center">
-        <CardTitle className="text-2xl font-bold gradient-text-emerald">OrçaFlow</CardTitle>
+        <div className="flex justify-center"><Image src="/logo.png" alt="OrçaFlow" width={160} height={42} className="h-10 w-auto" /></div>
         <CardDescription>Recupere sua senha</CardDescription>
       </CardHeader>
       <form action={formAction}>
@@ -58,7 +58,7 @@ export default function EsqueciSenhaPage() {
           </Button>
           <Link
             href="/login"
-            className="text-sm text-emerald-600 hover:text-emerald-700 underline-offset-4 hover:underline"
+            className="text-sm text-[#208E76] hover:text-[#1a7562] underline-offset-4 hover:underline"
           >
             Voltar para o login
           </Link>

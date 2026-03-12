@@ -21,7 +21,7 @@ const statusOptions: { value: QuoteStatus; label: string; color: string }[] = [
   { value: "fechado", label: "Fechado", color: "bg-green-400" },
   { value: "perdido", label: "Perdido", color: "bg-red-400" },
   { value: "cobranca_pendente", label: "Cobrança Pendente", color: "bg-purple-400" },
-  { value: "pago", label: "Pago", color: "bg-emerald-500" },
+  { value: "pago", label: "Pago", color: "bg-[#208E76]" },
 ]
 
 interface QuoteStatusSelectProps {

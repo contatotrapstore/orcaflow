@@ -12,7 +12,7 @@ export function Hero() {
       <div className="relative mx-auto max-w-4xl px-4 text-center">
         <h1 className="animate-fade-in-up text-4xl font-bold tracking-tight text-white sm:text-5xl md:text-6xl lg:text-7xl">
           Orçamentos que fecham,{" "}
-          <span className="text-emerald-400">não ficam no vácuo</span>
+          <span className="text-[#2aab8f]">não ficam no vácuo</span>
         </h1>
 
         <p className="animate-fade-in-up-delay-1 mx-auto mt-6 max-w-2xl text-lg text-gray-300 md:text-xl">
@@ -23,7 +23,7 @@ export function Hero() {
         <div className="animate-fade-in-up-delay-2 mt-10 flex flex-col items-center gap-4 sm:flex-row sm:justify-center">
           <Button
             size="lg"
-            className="emerald-glow h-12 px-8 text-base"
+            className="brand-glow h-12 px-8 text-base"
             nativeButton={false}
             render={<Link href="/cadastro" />}
           >

@@ -2,6 +2,7 @@
 
 import { useActionState } from "react"
 import Link from "next/link"
+import Image from "next/image"
 import { signUp, type AuthState } from "@/actions/auth"
 import { Button } from "@/components/ui/button"
 import { Input } from "@/components/ui/input"
@@ -12,7 +13,6 @@ import {
   CardDescription,
   CardFooter,
   CardHeader,
-  CardTitle,
 } from "@/components/ui/card"
 
 export default function CadastroPage() {
@@ -27,7 +27,7 @@ export default function CadastroPage() {
       <div className="hidden md:flex md:w-1/2 flex-col items-center justify-center relative bg-gradient-to-br from-[var(--hero-gradient-start)] to-[var(--hero-gradient-end)]">
         <div className="dot-pattern absolute inset-0" />
         <div className="relative z-10 text-center space-y-4">
-          <h1 className="gradient-text-emerald text-3xl font-bold">OrçaFlow</h1>
+          <Image src="/logo.png" alt="OrçaFlow" width={200} height={52} className="h-12 w-auto brightness-200" />
           <p className="text-gray-300 text-lg">Comece a fechar mais orçamentos</p>
           <ul className="text-gray-400 space-y-2 text-sm">
             <li>Crie orçamentos profissionais</li>
@@ -38,10 +38,10 @@ export default function CadastroPage() {
       </div>
 
       {/* Right column — form */}
-      <div className="w-full md:w-1/2 flex items-center justify-center bg-white p-6">
+      <div className="w-full md:w-1/2 flex items-center justify-center bg-background p-6">
         <Card className="w-full max-w-md mx-auto">
           <CardHeader className="text-center">
-            <CardTitle className="text-2xl font-bold gradient-text-emerald">OrçaFlow</CardTitle>
+            <div className="flex justify-center"><Image src="/logo.png" alt="OrçaFlow" width={160} height={42} className="h-10 w-auto" /></div>
             <CardDescription>Crie sua conta gratuita</CardDescription>
           </CardHeader>
           <form action={formAction}>
@@ -103,7 +103,7 @@ export default function CadastroPage() {
                 Já tem conta?{" "}
                 <Link
                   href="/login"
-                  className="text-emerald-600 hover:text-emerald-700 underline-offset-4 hover:underline font-medium"
+                  className="text-[#208E76] hover:text-[#1a7562] underline-offset-4 hover:underline font-medium"
                 >
                   Entrar
                 </Link>

@@ -1,6 +1,7 @@
 "use client"
 
 import Link from "next/link"
+import Image from "next/image"
 import { usePathname } from "next/navigation"
 import { cn } from "@/lib/utils"
 import {
@@ -29,8 +30,8 @@ export function Sidebar() {
   return (
     <aside className="hidden md:flex md:w-64 md:flex-col md:fixed md:inset-y-0 border-r bg-background">
       <div className="flex h-14 items-center px-6">
-        <Link href="/dashboard" className="text-xl font-bold gradient-text-emerald">
-          OrçaFlow
+        <Link href="/dashboard">
+          <Image src="/logo.png" alt="OrçaFlow" width={140} height={36} className="h-8 w-auto" />
         </Link>
       </div>
       <div className="mx-3 border-b" />
@@ -45,8 +46,8 @@ export function Sidebar() {
               className={cn(
                 "flex items-center gap-3 rounded-md px-3 py-2 text-sm font-medium transition-colors",
                 isActive
-                  ? "bg-emerald-500/10 text-emerald-700 dark:text-emerald-400 font-semibold border-l-2 border-emerald-500"
-                  : "text-muted-foreground hover:bg-emerald-50 dark:hover:bg-emerald-950 hover:text-emerald-700 dark:hover:text-emerald-400"
+                  ? "bg-[#208E76]/10 text-[#1a7562] dark:text-[#2aab8f] font-semibold border-l-2 border-[#208E76]"
+                  : "text-muted-foreground hover:bg-[#f0fdf9] dark:hover:bg-[#052e23] hover:text-[#1a7562] dark:hover:text-[#2aab8f]"
               )}
             >
               <item.icon className="h-4 w-4" />

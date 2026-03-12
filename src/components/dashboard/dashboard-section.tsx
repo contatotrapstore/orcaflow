@@ -25,7 +25,7 @@ export function DashboardSection({
             <Button
               variant="ghost"
               size="sm"
-              className="hover:text-emerald-600 dark:hover:text-emerald-400"
+              className="hover:text-[#1a7562] dark:hover:text-[#2aab8f]"
               nativeButton={false}
               render={<Link href={actionHref} />}
             >

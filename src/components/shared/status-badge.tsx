@@ -14,7 +14,7 @@ const quoteStatusConfig: Record<
   fechado: { label: "Fechado", className: "bg-green-100 text-green-700 hover:bg-green-100" },
   perdido: { label: "Perdido", className: "bg-red-100 text-red-700 hover:bg-red-100" },
   cobranca_pendente: { label: "Cobrança Pendente", className: "bg-purple-100 text-purple-700 hover:bg-purple-100" },
-  pago: { label: "Pago", className: "bg-emerald-100 text-emerald-800 hover:bg-emerald-100" },
+  pago: { label: "Pago", className: "bg-[#208E76]/10 text-[#1a7562] hover:bg-[#208E76]/15" },
 }
 
 const chargeStatusConfig: Record<

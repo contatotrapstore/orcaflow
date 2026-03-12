@@ -1,6 +1,7 @@
 "use client"
 
 import Link from "next/link"
+import Image from "next/image"
 import { usePathname } from "next/navigation"
 import { signOut } from "@/actions/auth"
 import { Button } from "@/components/ui/button"
@@ -54,8 +55,8 @@ export function Header({ userName }: { userName?: string }) {
         </SheetTrigger>
         <SheetContent side="left" className="w-64 p-0">
           <div className="flex h-14 items-center border-b px-6">
-            <Link href="/dashboard" className="text-xl font-bold gradient-text-emerald">
-              OrçaFlow
+            <Link href="/dashboard">
+              <Image src="/logo.png" alt="OrçaFlow" width={140} height={36} className="h-8 w-auto" />
             </Link>
           </div>
           <nav className="space-y-1 px-3 py-4">
@@ -70,8 +71,8 @@ export function Header({ userName }: { userName?: string }) {
                   className={cn(
                     "flex items-center gap-3 rounded-md px-3 py-2 text-sm font-medium transition-colors",
                     isActive
-                      ? "bg-emerald-500/10 text-emerald-700 dark:text-emerald-400 font-semibold border-l-2 border-emerald-500"
-                      : "text-muted-foreground hover:bg-emerald-50 dark:hover:bg-emerald-950 hover:text-emerald-700 dark:hover:text-emerald-400"
+                      ? "bg-[#208E76]/10 text-[#1a7562] dark:text-[#2aab8f] font-semibold border-l-2 border-[#208E76]"
+                      : "text-muted-foreground hover:bg-[#f0fdf9] dark:hover:bg-[#052e23] hover:text-[#1a7562] dark:hover:text-[#2aab8f]"
                   )}
                 >
                   <item.icon className="h-4 w-4" />
@@ -91,7 +92,7 @@ export function Header({ userName }: { userName?: string }) {
       <DropdownMenu>
         <DropdownMenuTrigger
           render={
-            <button className="relative flex h-8 w-8 items-center justify-center rounded-full outline-none ring-offset-background focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 hover:ring-2 hover:ring-emerald-500/20 transition-all" />
+            <button className="relative flex h-8 w-8 items-center justify-center rounded-full outline-none ring-offset-background focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 hover:ring-2 hover:ring-[#208E76]/20 transition-all" />
           }
         >
           <Avatar className="h-8 w-8">
